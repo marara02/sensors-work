@@ -1,7 +1,9 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, unused_import
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/acc_tracer.dart';
+import 'package:flutter_application_2/angles.dart';
+import 'package:flutter_application_2/euler_angles.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,12 +45,6 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Container(
-              width: 250,
-              height: 250,
-              child: Image.asset('assets/logo.png'),
-            ),
-            
             Padding(
               padding: EdgeInsets.only(
                 left: 50,
@@ -110,6 +106,23 @@ class _MyHomePageState extends State<MyHomePage> {
                     );
                   },
                   child: Text('Submit'),
+                  ),
+              ),
+               Container(
+                width: MediaQuery.of(context).size.width / 1.3,
+                height: MediaQuery.of(context).size.height / 10 ,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(35.0),
+                  color: Colors.amber,
+                 ),
+                child: MaterialButton(
+                  onPressed: () {
+                    print('Checked');
+                    Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => AnglePage())
+                    );
+                  },
+                  child: Text('Check'),
                   ),
               )
           ],

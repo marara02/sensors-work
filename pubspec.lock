@@ -50,6 +50,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.4"
+  euler_angles:
+    dependency: "direct main"
+    description:
+      name: euler_angles
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.2"
   fake_async:
     dependency: transitive
     description:
@@ -102,6 +109,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.7.0"
+  motion_sensors:
+    dependency: "direct main"
+    description:
+      name: motion_sensors
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.0"
   path:
     dependency: transitive
     description:
@@ -109,6 +123,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0"
+  plugin_scaffold:
+    dependency: "direct main"
+    description:
+      name: plugin_scaffold
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
   sensors:
     dependency: "direct main"
     description:
