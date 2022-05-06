@@ -5,6 +5,9 @@ import 'package:flutter_application_2/acc_tracer.dart';
 import 'package:flutter_application_2/angles.dart';
 import 'package:flutter_application_2/euler_angles.dart';
 
+import 'home.dart';
+import 'location.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -17,14 +20,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'ByCar Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.purple,
-      ),
+      theme: ThemeData.light(),
       home: const MyHomePage(title: 'ByCar'),
     );
   }
 }
-
+// const MyHomePage(title: 'ByCar')
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
 
@@ -119,7 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   onPressed: () {
                     print('Checked');
                     Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => AnglePage())
+                    MaterialPageRoute(builder: (context) => MapPage())
                     );
                   },
                   child: Text('Check'),
